@@ -1,3 +1,17 @@
+Maven:
+```xml
+    <dependency>
+      <groupId>com.github.yooniks</groupId>
+      <artifactId>phasmatos-inventory-api</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+           
+    <repository>
+      <id>jitpack.io</id>
+      <url>https://jitpack.io</url>
+    </repository>
+```
 Example:
 ```java
   @Override
@@ -50,4 +64,5 @@ Example:
       }
       return item;
     }
-  }```
+  }
+  ```
