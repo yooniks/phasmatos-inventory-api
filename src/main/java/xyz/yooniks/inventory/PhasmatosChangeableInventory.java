@@ -35,7 +35,7 @@ public abstract class PhasmatosChangeableInventory implements PhasmatosInventory
     final Inventory inventory = Bukkit.createInventory(null, size, title);
 
     this.items.forEach((slot, item) ->
-        inventory.setItem(slot, item = this.updateItem(item, player)));
+        inventory.setItem(slot, item = this.updateItem(item, slot, player)));
 
     player.openInventory(inventory);
   }
@@ -50,6 +50,6 @@ public abstract class PhasmatosChangeableInventory implements PhasmatosInventory
     return size;
   }
 
-  public abstract ItemStack updateItem(ItemStack item, Player player);
+  public abstract ItemStack updateItem(ItemStack item, int slot, Player player);
 
 }

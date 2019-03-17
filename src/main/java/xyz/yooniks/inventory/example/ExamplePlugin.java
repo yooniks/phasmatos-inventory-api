@@ -58,7 +58,7 @@ public final class ExamplePlugin extends JavaPlugin {
     }
 
     @Override
-    public ItemStack updateItem(ItemStack item, Player player) {
+    public ItemStack updateItem(ItemStack item, int slot, Player player) {
       if (item.getType() == Material.COBBLESTONE) {
         final ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(StringUtils.replace(meta.getDisplayName(), "{PLAYER}", player.getName()));

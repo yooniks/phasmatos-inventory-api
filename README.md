@@ -3,7 +3,7 @@ Maven:
     <dependency>
       <groupId>com.github.yooniks</groupId>
       <artifactId>phasmatos-inventory-api</artifactId>
-      <version>1.0</version>
+      <version>1.1</version>
       <scope>compile</scope>
     </dependency>
            
@@ -56,7 +56,7 @@ Example:
     }
 
     @Override
-    public ItemStack updateItem(ItemStack item, Player player) {
+    public ItemStack updateItem(ItemStack item, int slot, Player player) {
       if (item.getType() == Material.COBBLESTONE) {
         final ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(StringUtils.replace(meta.getDisplayName(), "{PLAYER}", player.getName()));
