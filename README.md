@@ -3,7 +3,7 @@ Maven:
     <dependency>
       <groupId>com.github.yooniks</groupId>
       <artifactId>phasmatos-inventory-api</artifactId>
-      <version>1.1</version>
+      <version>v1.1</version>
       <scope>compile</scope>
     </dependency>
            
